@@ -289,6 +289,9 @@ Route in twee groepen: *De mail van Tom* (stap 1–4) · *Klaar om te versturen*
    - Handelingen: vul **Aan** in (het adres staat in het kader) · schrijf een **onderwerp** (je mag dat van rij 1
      gebruiken) · schrijf de mail, bouwsteen per bouwsteen, in de vakken · gebruik de feiten uit het kader: bestelling,
      donderdag 29 oktober, de koelcel, vrijdag 30 oktober tussen 7 en 10 uur, dinsdag 27 oktober.
+     Sinds 19-10-2026 (de pagina begint in *Kort*) staat zichtbaar in de handeling zelf, niet alleen in de stapjes: het
+     adres uit het kader, het onderwerp van rij 1, en *Je schrijft voor Tom: onderaan staat de handtekening van Tom*
+     (stap 3 zegt bij de handtekening *je naam*; wie de eigen naam zet, ondertekent niet voor Tom).
    - Grijze regel: *Kijk naar de mail van Lotte in deel 2: zo ziet een goede mail eruit. Schrijf ze niet over: Tom
      vraagt iets anders.*
    - Tip: *Weet je niet hoe je de vraag begint? Begin met "Kunt u …?"*
