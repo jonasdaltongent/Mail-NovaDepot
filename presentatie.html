@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>De zakelijke e-mail · dia's · NovaDepot</title>
+  <link rel="icon" href="assets/novadepot-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/slides.css">
+  <style>
+    .compact .two { flex: 0 0 auto; }
+    .compact .panel p { margin-bottom: 10px; }
+    .compact .panel p:last-child { margin-bottom: 0; }
+    .qhead { font-size: 30px; font-weight: 700; margin: 0 0 6px; }
+    .qcol .opt { font-size: 26px; padding: 8px 16px; }
+    .qcol .opt .n { width: 46px; height: 46px; font-size: 24px; }
+    .klok { font-size: 22px; color: #4D5573; }
+    .steps1 { margin: 0; padding-left: 1.2em; }
+    .steps1 li { font-size: 27px; margin-bottom: 14px; }
+    .steps1 li:last-child { margin-bottom: 0; }
+    .lbl { font-weight: 700; font-size: 22px !important; margin: 0 0 10px; color: var(--navy-deep); }
+    .rood { color: #A0372A; font-weight: 700; }
+    .groen { color: #1F7A55; font-weight: 700; }
+    .vond { list-style: none; padding: 0 !important; margin: 0 0 14px; display: grid; gap: 12px; }
+    .vond li { display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: center; background: #fff; border: 2px solid #D6D5CB; border-radius: 14px; padding: 10px 18px; font-size: 26px !important; margin: 0 !important; line-height: 1.3; }
+    .vond .nr { width: 46px; height: 46px; border-radius: 50%; background: var(--navy); color: #fff; font-weight: 700; font-size: 24px; display: flex; align-items: center; justify-content: center; }
+    /* een nagemaakt venster Nieuw bericht (kijk naar de mail van Tom) */
+    .dmail { background: #fff; border: 2px solid #9AA0A6; border-radius: 12px 12px 6px 6px; overflow: hidden; font-family: Arial, Helvetica, sans-serif; font-size: 23px; color: #202124; box-shadow: 0 8px 24px rgba(29,35,64,.15); }
+    .dm-kop { background: #F2F6FC; font-weight: 700; font-size: 20px; padding: 8px 18px; }
+    .dm-veld { display: flex; gap: 14px; padding: 8px 18px; border-bottom: 1px solid #E3E3E3; font-size: 21px; }
+    .dm-veld span { color: #5F6368; min-width: 120px; }
+    .dm-veld .leeg { color: #A0372A; font-style: italic; }
+    .dm-tekst { padding: 14px 18px 4px; }
+    .dm-tekst p { margin: 0 0 12px !important; font-size: 23px !important; line-height: 1.3 !important; }
+    /* de zes bouwstenen: een nummer en de naam links, wat erin staat rechts */
+    .dbouw { background: #fff; border: 2px solid #9AA0A6; border-radius: 12px 12px 6px 6px; overflow: hidden; font-family: Arial, Helvetica, sans-serif; box-shadow: 0 8px 24px rgba(29,35,64,.15); }
+    .db-kop { background: #F2F6FC; font-weight: 700; font-size: 21px; padding: 6px 18px; }
+    .db-veld { display: flex; gap: 14px; padding: 6px 18px; border-bottom: 1px solid #E3E3E3; font-size: 22px; color: #5F6368; }
+    .db-veld span { min-width: 150px; }
+    .db-rij { display: grid; grid-template-columns: 290px 1fr; gap: 16px; align-items: center; padding: 10px 18px; border-bottom: 1px dashed #D6D5CB; }
+    .db-rij:last-child { border-bottom: 0; }
+    .db-naam { display: flex; align-items: center; gap: 12px; font-weight: 700; color: var(--navy-deep); font-size: 27px; }
+    .db-naam b { flex: none; width: 42px; height: 42px; border-radius: 50%; background: var(--navy); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 23px; }
+    .db-tekst { font-size: 26px; color: #202124; line-height: 1.2; }
+    .ondw { background: #fff; border: 3px solid var(--navy); border-radius: 12px; padding: 8px 16px; margin: 0; font-family: Arial, sans-serif; font-size: 24px !important; line-height: 1.25 !important; }
+    .ondw .lblk { display: block; font-size: 18px; color: #5F6368; margin-bottom: 2px; }
+    .ondw.slecht { border-color: #A0372A; }
+    .ondw.goed { border-color: var(--ok); }
+    .groot { font-size: 30px !important; }
+    .markeer { background: #FCD6CF; border-radius: 6px; padding: 0 8px; font-weight: 700; }
+  </style>
+</head>
+<body>
+<div class="hud"><span id="counter"></span> · <kbd>→</kbd> verder · <kbd>F</kbd> volledig scherm · <kbd>N</kbd> notities</div>
+<div class="deck"><div class="stage">
+
+<!-- 1 · vaste startdia -->
+<section class="slide start">
+  <div class="start-kop">
+    <div>
+      <p class="kicker">Toegepaste Informatica · les 11</p>
+      <h1>De zakelijke e-mail</h1>
+    </div>
+    <span class="start-zo">Zo start je</span>
+  </div>
+  <ol class="startroute">
+    <li><div class="sr-beeld"><div class="pc-scherm"><span class="pc-avatar"></span><span class="pc-veld">••••••</span></div><div class="pc-voet"></div></div><span class="sr-tekst">Meld je aan op de computer.</span></li>
+    <li><div class="sr-beeld"><span class="url-balk"><img class="logo" src="assets/logos/classroom.svg" alt="">classroom.google.com</span><span class="url-knop">Inloggen</span></div><span class="sr-tekst">Ga in Chrome naar Classroom. Klik op <span class="knop">Inloggen</span>.</span></li>
+    <li><div class="sr-beeld"><span class="login-veld">…<b>@dalton.gent</b></span><span class="login-veld">••••••••</span></div><span class="sr-tekst">Log in met je schoolaccount.</span></li>
+    <li><div class="sr-beeld"><div class="lesgroep"><span class="lesgroep-kop">… 2027 - Informatica</span></div></div><span class="sr-tekst">Klik op je klas: 3ORLO, 4ORLOa of 4ORLOb.</span></li>
+    <li><div class="sr-beeld"><div class="tabs"><span class="tab-grijs"></span><span class="tab-aan">Schoolwerk</span><span class="tab-grijs"></span></div></div><span class="sr-tekst">Klik op <span class="knop">Schoolwerk</span>.</span></li>
+    <li><div class="sr-beeld"><span class="opdr-rij"><span class="opdr-ic"></span>Communicatie 1 — De zakelijke…</span><span class="opdr-link">Instructies bekijken</span></div><span class="sr-tekst">Klik op de opdracht › <span class="knop">Instructies bekijken</span>.</span></li>
+    <li><div class="sr-beeld"><span class="bijl-chip aan"><img class="logo" src="assets/logos/lespagina.webp" alt="">Les 11 · De zakelijke e-mail</span></div><span class="sr-tekst">Klik op de lespagina.</span></li>
+    <li class="klaar">Klaar? Laat de lespagina open en kijk naar het bord.</li>
+  </ol>
+  <template class="note">
+    <p><strong>Lesstart (0–1'). De vaste startdia</strong> (sinds 09-10-2026, elke les dezelfde, voor alle klassen). Laat ze op het bord staan terwijl de leerlingen aanmelden.</p>
+    <p>Het <strong>wachtwoord van de computers</strong> staat niet op de dia: de dia's staan openbaar online. Zeg het, of schrijf het op het bord.</p>
+    <p>Ga verder als de meesten de lespagina open hebben.</p>
+  </template>
+</section>
+
+<!-- 2 · lesstart: ophalen uit les 09 -->
+<section class="slide met-mascotte" data-answer>
+  <img class="mascotte" src="assets/mascotte/dalton_denken.webp" alt="" width="240" height="240">
+  <p class="kicker">Lesstart · 3 minuten</p>
+  <h2>Weet je het nog?</h2>
+  <div class="two" style="grid-template-columns: 330px 1fr">
+    <div class="panel">
+      <p class="lbl">Les 09 · een veilig account</p>
+      <p style="font-size:26px">Tom krijgt een mail: <em>“Nieuwe aanmelding op een onbekend toestel.”</em> Hij was het niet.</p>
+    </div>
+    <div class="qcol">
+      <p class="qhead">Wat doet Tom eerst?</p>
+      <div class="opts">
+        <div class="opt"><span class="n">A</span>Wachten: misschien gaat het vanzelf over</div>
+        <div class="opt right"><span class="n">B</span>Meteen zijn wachtwoord veranderen</div>
+        <div class="opt"><span class="n">C</span>Zijn wachtwoord naar een collega sturen</div>
+      </div>
+    </div>
+  </div>
+  <p class="answer">Meteen zijn wachtwoord veranderen. Daarna: tweestapsverificatie aanzetten en NovaDepot verwittigen.</p>
+  <template class="note">
+    <p><strong>Lesstart (3'), ophalen uit les 09.</strong> Iedereen antwoordt tegelijk met vingers: 1, 2 of 3 vingers voor A, B of C. Druk daarna op → voor het antwoord.</p>
+    <p>Wie A kiest: <em>"Wat kan iemand al doen terwijl jij wacht?"</em> Wie C kiest: <em>"Wie mag je wachtwoord kennen?"</em> (Niemand.)</p>
+    <p><strong>De brug naar vandaag</strong>: <em>"Toms account is weer veilig. Vandaag schrijft hij er een belangrijke mail mee, en hij heeft jullie hulp nodig."</em></p>
+  </template>
+</section>
+
+<!-- 3 · lesdoel -->
+<section class="slide met-mascotte">
+  <img class="mascotte" src="assets/mascotte/dalton_wijzen_links.webp" alt="" width="240" height="240">
+  <p class="kicker">Ik doe · dia 1 van 4</p>
+  <h2>Wat kan je straks?</h2>
+  <ul class="rules">
+    <li>Je vindt in een slordige mail <strong>wat er mis is</strong>.</li>
+    <li>Je zet de <strong>zes bouwstenen</strong> van een zakelijke mail in de juiste volgorde.</li>
+    <li>Je schrijft een <strong>zakelijke mail aan een leverancier</strong>, met een precies onderwerp en de u-vorm.</li>
+  </ul>
+  <p class="klok" style="margin-top:6px">Ik leg 5 minuten uit. Daarna werk jij zelfstandig met de lespagina, en kom ik bij jou langs.</p>
+  <template class="note">
+    <p><strong>Ik doe, 0'30".</strong> Lesdoel voorlezen, niet toelichten. Zeg er meteen bij dat de uitleg maar vijf minuten duurt en dat alles daarna op de lespagina staat. Zeg ook: <em>"Er wordt vandaag niets echt verstuurd. Je schrijft de mail in je werkdocument."</em></p>
+  </template>
+</section>
+
+<!-- 4 · de situatie en de slordige mail van Tom -->
+<section class="slide compact">
+  <p class="kicker">Ik doe · dia 2 van 4 · kijk naar de mail van Tom</p>
+  <h2 style="margin-bottom:14px">Tom heeft een probleem</h2>
+  <div class="two" style="grid-template-columns: 0.9fr 1.25fr; align-items: start">
+    <ul class="vond">
+      <li><span class="nr">1</span><span>Bestelling <strong>2026-0418</strong>: zuivel van Zuivelhoeve De Melkkan.</span></li>
+      <li><span class="nr">2</span><span>Levering: <strong>donderdag 29 oktober</strong>, 7.30 uur.</span></li>
+      <li><span class="nr">3</span><span>Die dag krijgt de <strong>koelcel</strong> onderhoud. Er kan geen zuivel binnen.</span></li>
+      <li><span class="nr">4</span><span>Tom wil <strong>vrijdag 30 oktober</strong>.</span></li>
+    </ul>
+    <div class="dmail">
+      <div class="dm-kop">Nieuw bericht · de mail van Tom</div>
+      <div class="dm-veld"><span>Aan</span>verkoop@demelkkan.example</div>
+      <div class="dm-veld"><span>Onderwerp</span><em class="leeg">(leeg)</em></div>
+      <div class="dm-tekst"><p>hey,</p><p>ik ben tom van novadepot. kunnen jullie de levering later doen want onze koelcel is kapot!!! &#128517;</p><p>laat iets weten asap</p><p>thx</p><p>tom</p></div>
+    </div>
+  </div>
+  <template class="note">
+    <p><strong>Ik doe, 1'.</strong> Vertel de situatie in eigen woorden: <em>"Tom heeft zuivel besteld bij Zuivelhoeve De Melkkan. Donderdag 29 oktober komt de levering, maar dan krijgt de koelcel onderhoud. Tom wil de levering een dag later. Hij heeft al een mail geschreven. Lees hem mee."</em></p>
+    <p><strong>Zeg wat je moet zien</strong>: de tekening is een venster <em>Nieuw bericht</em>, zoals in je werkdocument. Bovenaan <em>Aan</em> en <em>Onderwerp</em>, daaronder de tekst van de mail. Vraag: <em>"Wat valt jullie op?"</em> Laat twee leerlingen antwoorden, maar los nog niets op.</p>
+    <p>De mail staat ook in deel 1 van het werkdocument. De adressen zijn verzonnen (<em>.example</em> bestaat nooit echt).</p>
+  </template>
+</section>
+
+<!-- 5 · demo: het onderwerp -->
+<section class="slide compact">
+  <p class="kicker">Ik doe · dia 3 van 4 · demo: rij 1 van deel 1</p>
+  <h2 style="margin-bottom:14px">Het onderwerp is leeg</h2>
+  <div class="two" style="grid-template-columns: 1fr 1fr; align-items: start">
+    <div class="panel">
+      <p class="bad-label">Nu</p>
+      <p class="ondw slecht"><span class="lblk">Onderwerp</span><em>(leeg)</em></p>
+      <p style="font-size:24px;margin-top:12px">Kim Wouters krijgt elke dag tientallen mails. <strong>Wat moet ze meteen zien?</strong></p>
+    </div>
+    <div class="panel reveal-item">
+      <p class="good-label">Zo is het beter</p>
+      <p class="ondw goed"><span class="lblk">Onderwerp</span>Levering bestelling 2026-0418 verplaatsen naar vrijdag 30 oktober</p>
+      <p style="font-size:24px;margin-top:12px"><span class="groen">Welke bestelling</span> en <span class="groen">wat Tom vraagt</span>.</p>
+    </div>
+  </div>
+  <div class="panel reveal-item" style="margin-top:14px">
+    <p class="groot" style="margin:0">Nog iets: <span class="markeer">hey,</span> is dat hoe je iemand aanspreekt die je niet kent?</p>
+  </div>
+  <template class="note">
+    <p><strong>Ik doe, 2' — hardop denkend.</strong> Dit is rij 1 van deel 1, ook ingevuld in het werkdocument. <em>"Het onderwerp is leeg. Kim Wouters krijgt elke dag tientallen mails. Wat moet ze meteen zien? Welke bestelling, en wat Tom vraagt."</em> Schrijf samen het onderwerp, en druk dan op →: <em>Levering bestelling 2026-0418 verplaatsen naar vrijdag 30 oktober</em>. Fout en juist staan naast elkaar.</p>
+    <p>Druk op →: <em>"Hey… is dat hoe je iemand aanspreekt die je niet kent?"</em> Los het <strong>niet</strong> op: dat zoeken ze zelf in stap 2. Zeg: <em>"Rij 2 tot 5 doe je zelf."</em></p>
+  </template>
+</section>
+
+<!-- 6 · de zes bouwstenen -->
+<section class="slide compact">
+  <p class="kicker">Ik doe · dia 4 van 4 · kijk naar de labels links</p>
+  <h2 style="margin-bottom:12px">Een zakelijke mail heeft zes bouwstenen</h2>
+  <div class="dbouw">
+    <div class="db-kop">Nieuw bericht</div>
+    <div class="db-veld"><span>Aan</span>de ontvanger</div>
+    <div class="db-veld"><span>Onderwerp</span>precies: welke bestelling, wat vraag je?</div>
+    <div class="db-rij"><span class="db-naam"><b>1</b>Aanspreking</span><span class="db-tekst">met een naam, beleefd</span></div>
+    <div class="db-rij"><span class="db-naam"><b>2</b>Inleiding</span><span class="db-tekst">wie ben je, waarover mail je?</span></div>
+    <div class="db-rij"><span class="db-naam"><b>3</b>De vraag</span><span class="db-tekst">wat, wanneer en waarom?</span></div>
+    <div class="db-rij"><span class="db-naam"><b>4</b>Slot</span><span class="db-tekst">tegen wanneer, en bedanken</span></div>
+    <div class="db-rij"><span class="db-naam"><b>5</b>Slotgroet</span><span class="db-tekst">een beleefde afsluiting, zonder afkorting</span></div>
+    <div class="db-rij"><span class="db-naam"><b>6</b>Handtekening</span><span class="db-tekst">naam, functie, bedrijf, toestel</span></div>
+  </div>
+  <template class="note">
+    <p><strong>Ik doe, 1'30".</strong> <strong>Lees de tekening de eerste keer hardop voor</strong> (een nieuw soort tekening): <em>"Dit is een mail zoals in je werkdocument. Je begint bij het label met het cijfer 1 en leest naar onder. Links staat de naam van de bouwstenen, rechts wat erin komt. De cijfers geven de volgorde: altijd dezelfde."</em></p>
+    <p>Loop de zes bouwstenen kort af. Zeg: <em>"In stap 3 zet je de stukjes van een goede mail van Lotte in deze volgorde. In stap 4 schrijf je zelf de mail voor Tom."</em> Wijs op de witregel tussen aanspreking en tekst, en tussen tekst en slotgroet.</p>
+  </template>
+</section>
+
+<!-- 7 · controle -->
+<section class="slide " data-answer>
+  <p class="kicker">Controle · iedereen antwoordt</p>
+  <h2>Welke aanspreking?</h2>
+  <div class="qcol">
+    <p class="qhead">Tom mailt Kim Wouters, die hij niet persoonlijk kent. Welke aanspreking past?</p>
+    <div class="opts">
+      <div class="opt"><span class="n">A</span><em>Hey Kim,</em></div>
+      <div class="opt right"><span class="n">B</span><em>Beste mevrouw Wouters,</em></div>
+      <div class="opt"><span class="n">C</span><em>Beste,</em></div>
+    </div>
+  </div>
+  <p class="answer">Met een naam erbij: <em>Beste mevrouw Wouters,</em> Alleen <em>Beste,</em> klinkt onpersoonlijk.</p>
+  <template class="note">
+    <p><strong>Controle (1'). Iedereen antwoordt tegelijk</strong>: 1, 2 of 3 vingers voor A, B of C. Kijk rond en onthoud wie A of C toont. (Team Taaladvies: <em>Beste</em> zonder naam kan onpersoonlijk overkomen.)</p>
+    <p>Wie A kiest: <em>"Kent Tom Kim Wouters persoonlijk? Zou je je leraar aanspreken met hey?"</em> Wie C kiest: <em>"Aan wie schrijf je dan? Staat er een naam?"</em></p>
+    <p>Druk op → voor het antwoord. Wie A of C toonde, komt zo meteen 3 tot 5 minuten bij je.</p>
+  </template>
+</section>
+
+<!-- 8 · iedereen doet stap 1 -->
+<section class="slide ">
+  <p class="kicker">Samen · 3 minuten</p>
+  <h2>Iedereen doet stap 1</h2>
+  <div class="panel">
+    <ol class="steps1">
+      <li>Open de lespagina. Klik op <strong>Stap 1 · Klaarzetten</strong>.</li>
+      <li>Open je werkdocument en lees het kader: wat moet Tom vragen, aan wie, en tegen wanneer?</li>
+      <li>Klaar? Steek je <strong>duim</strong> op.</li>
+    </ol>
+  </div>
+  <template class="note">
+    <p><strong>Samen (3').</strong> Iedereen doet stap 1 tegelijk. Loop rond en kijk naar de schermen: het werkdocument open, met de naam van de leerling in de titel?</p>
+    <p>Duim op bij de meesten: ga naar de volgende dia. Wie op de controlevraag fout had of hier vastloopt, blijft 3 tot 5 minuten bij je. De rest begint aan stap 2.</p>
+    <p>Zeg één zin over <em>Stap voor stap</em> / <em>Kort</em>: <em>"Weet je niet hoe het moet? Laat Stap voor stap aan, dan zie je elk klein stapje met een beeld. Kan je het al? Kies Kort."</em> En: <em>"Typ je mail in je werkdocument, in de lichtblauwe vakken."</em></p>
+  </template>
+</section>
+
+<!-- 9 · zo werk je verder -->
+<section class="slide compact met-mascotte">
+  <img class="mascotte" src="assets/mascotte/dalton_laptop.webp" alt="" width="240" height="240">
+  <p class="kicker">Keuzewerktijd · <span class="eindtijd">40 minuten</span></p>
+  <h2>Zo werk je verder</h2>
+  <div class="two" style="grid-template-columns: 1.6fr 1fr">
+    <div>
+      <ol class="steps1 kloklijst" data-lesmomenten="2026-10-21/9.15/10.05/3ORLO/2;2026-10-21/10.25/11.15/4ORLOb/3;2026-10-22/13.45/14.35/4ORLOa/7" data-beltijden="8.25-9.15 9.15-10.05 10.25-11.15 11.15-12.05 12.05-12.55 13.45-14.35 14.35-15.25 15.25-16.15 16.15-17.05">
+        <li data-min="3" data-samen>Klaarzetten <span class="klok tijd">samen &#10003;</span></li>
+        <li data-min="8">Wat is er mis? <span class="klok tijd">8'</span></li>
+        <li data-min="8">De bouwstenen <span class="klok tijd">8'</span></li>
+        <li data-min="13">Jouw mail voor Tom <span class="klok tijd">13'</span></li>
+        <li data-min="8">Nalezen en inleveren <span class="klok tijd">8'</span></li>
+      </ol>
+    </div>
+    <div class="panel navy">
+      <p style="font-size:25px"><strong>Vast?</strong></p>
+      <p style="font-size:26px">1. <em>Toon stapjes</em><br>2. Je buur<br>3. Ik</p>
+      <p style="margin-top:14px;font-size:22px">Vink af in de <strong>checklist</strong>.</p>
+    </div>
+  </div>
+  <p class="klok" style="margin-top:18px;font-size:25px">
+    <strong>Alles staat in de opdracht in <span class="met-logo"><img class="logo" src="assets/logos/classroom.svg" alt="">Google Classroom</span></strong> <em>Communicatie 1 — De zakelijke e-mail</em>: de lespagina en je werkdocument.
+    Je levert alleen je <strong>werkdocument</strong> in.<br>Adres: jonasdaltongent.github.io/Mail-NovaDepot/<!-- PAS AAN --></p>
+  <template class="note">
+    <p><strong>Keuzewerktijd.</strong> Laat deze dia staan zolang ze werken. <strong>De kloktijden</strong> komen uit de planning: buiten de les toont de dia de uren van het geplande lesmoment (met de dag en de klas erbij); tijdens dat lesmoment rekent ze vanaf nu tot de bel, min 1 minuut voor de exitvraag. Stap 1 is al samen gedaan (dia 8). Te vroeg getoond, of geef je de les op een ander uur? Druk op <strong>T</strong>.</p>
+    <p>Eerste rondgang: heeft iedereen het <strong>eigen</strong> werkdocument open (de naam in de titel)? Tweede rondgang, rond stap 4: staan het <strong>bestelnummer</strong> en de <strong>nieuwe datum</strong> in de mail?</p>
+    <p>Denkvragen: <em>"Welke levering bedoelt Tom? Staat dat in je mail?"</em> · <em>"Wat moet Kim Wouters doen na het lezen?"</em> · <em>"Schrijf je overal u?"</em></p>
+    <p>Wie vastzit bij stap 4: <em>"Begin met Kunt u …?"</em> Wie niet klaar raakt: minimumroute = deel 1, deel 3 en inleveren; deel 2 mag later, vóór de deadline.</p>
+    <p>Wie vraagt hoe hij inlevert: kijk eerst onder de vragen van de laatste stap.</p>
+    <p><strong>Vergeet niet</strong> het adres op deze dia aan te passen als de repository anders heet.</p>
+  </template>
+</section>
+
+<!-- 10 · exitvraag -->
+<section class="slide met-mascotte" data-answer>
+  <img class="mascotte" src="assets/mascotte/dalton_hulp.webp" alt="" width="240" height="240">
+  <p class="kicker">Afsluiten · laatste minuut</p>
+  <h2 style="margin-bottom:10px">Eén vraag voor je vertrekt</h2>
+  <div class="qcol">
+    <p class="qhead">Tom schrijft: <em>“Kunt u op vrijdag leveren? Laat je iets weten?”</em> Wat is er mis?</p>
+    <div class="opts">
+      <div class="opt"><span class="n">A</span>Niets</div>
+      <div class="opt right"><span class="n">B</span><em>U</em> en <em>je</em> door elkaar</div>
+      <div class="opt"><span class="n">C</span>De mail is te kort</div>
+    </div>
+  </div>
+  <p class="answer">In één mail schrijf je overal <em>u</em>. Hier staan <em>u</em> en <em>je</em> allebei.</p>
+  <p style="margin-top:6px;font-size:25px"><strong>Vertrek je? Log uit, of druk op Windows + L.</strong><br>Volgende les: <strong>Aan, Cc, Bcc en een bijlage</strong>.</p>
+  <template class="note">
+    <p><strong>Afsluiting, laatste minuut van de keuzewerktijd.</strong> Laat twee of drie leerlingen antwoorden, en druk dan op → voor het antwoord. Wie A kiest, ziet het register nog niet: onthoud wie dat is, en begin er volgende keer mee.</p>
+    <p>Zeg mondeling dat wie niet klaar is, toch inlevert.</p>
+    <p><strong>Vertrekken:</strong> iedereen logt uit, of drukt op Windows + L.</p>
+    <p>Na de les: kijk in de werkdocumenten naar deel 3: staat het bestelnummer erin? Staat er overal u? En is de nieuwe datum voorgesteld (niet alleen <em>later</em>)?</p>
+  </template>
+</section>
+
+</div></div>
+<div class="notes" id="notes"></div>
+<script src="js/slides.js"></script>
+</body>
+</html>

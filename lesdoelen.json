@@ -1,0 +1,37 @@
+{
+  "lesid": "novadepot-mail",
+  "lesnr": "11",
+  "titel": "Communicatie 1 - De zakelijke e-mail (een levering verplaatsen)",
+  "week": 8,
+  "schooljaar": "2026-2027",
+  "datum": "2026-10-21",
+  "_opmerking_datum": "Uur 2 van week 8: 3ORLO wo 21 okt (2de uur), 4ORLOb wo 21 okt (3de uur), 4ORLOa do 22 okt (7de uur).",
+  "klasgroepen": [
+    "ORLO"
+  ],
+  "_opmerking_klasgroepen": "De klasgroepcode moet 'ORLO' zijn: daarmee telt het blad 'ORLO' de regels op. De echte klasnamen staan hieronder.",
+  "klasnaam": "3ORLO, 4ORLOa, 4ORLOb",
+  "finaliteit": "arbeidsmarktgerichte finaliteit",
+  "lesduur_minuten": 50,
+  "evaluatie": "formatief (voorbereiding op E1, les 15)",
+  "deadline": "2026-10-23T20:00",
+  "bron": "https://github.com/jonasdaltongent/Mail-NovaDepot",
+  "doelen": [
+    {
+      "code": "BV2_04.01",
+      "rol": "kern"
+    },
+    {
+      "code": "BK2_02.01",
+      "rol": "ondersteunend"
+    },
+    {
+      "code": "BV2_02.08",
+      "rol": "ondersteunend"
+    },
+    {
+      "code": "BV2_02.12",
+      "rol": "ondersteunend"
+    }
+  ]
+}
