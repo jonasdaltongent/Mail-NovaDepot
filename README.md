@@ -55,7 +55,7 @@ Geen zip en geen bronbestanden: er is niets te downloaden, uit te pakken of te u
 ### 1b. Hoe de lespagina werkt
 
 Zoals les 09: links de **route** (*De mail van Tom*: stap 1–4 · *Klaar om te versturen*: stap 5), midden **één stap** met
-*Stap voor stap / Kort* (de les begint in *Stap voor stap*), rechts de **checklist** met 16 taken. Geen *Hulp nodig?*: grijze
+*Toon stapjes* per handeling (de les begint in *Kort*, zonder knop, sinds 18-10-2026), rechts de **checklist** met 16 taken. Geen *Hulp nodig?*: grijze
 regels onder de handeling en één tip per stap.
 
 - **Startpagina** met drie beelden (de opdracht in Classroom → deze lespagina → je werkdocument CO1), daaronder *Dit maak je

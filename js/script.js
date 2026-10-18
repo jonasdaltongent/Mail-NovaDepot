@@ -132,11 +132,13 @@
    * Stap voor stap: elke handeling staat open, met haar kleine stapjes en een beeld.
    * Kort: alleen de handelingen; een leerling klapt zelf open wat ze niet weet.
    * Een handeling met data-dicht (alleen voor wie ze nodig heeft) blijft dicht tot de leerling ze opent.
-   * De beginstand komt uit data-modus-start op body; de keuze wordt per les onthouden. */
+   * De beginstand komt uit data-modus-start op body (standaard kort, Jonas 18-10-2026). Sinds 18-10-2026
+   * staat de knop niet meer op de pagina (Jonas: "Doe maar voor iedereen"): de leerling opent per handeling
+   * Toon stapjes. Zonder knop telt alleen data-modus-start; met een knop wordt de keuze per les onthouden. */
   var modusBtns = all('.modus-btn');
   var stapjes = all('details.stapjes');
   function zetModus(m, bewaar) {
-    if (m !== 'kort') m = 'stap';
+    if (m !== 'stap') m = 'kort';
     body.classList.toggle('modus-kort', m === 'kort');
     stapjes.forEach(function (d) { d.open = (m === 'stap') && !d.hasAttribute('data-dicht'); });
     modusBtns.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-modus') === m ? 'true' : 'false'); });
@@ -145,7 +147,8 @@
   modusBtns.forEach(function (b) {
     b.addEventListener('click', function () { zetModus(b.getAttribute('data-modus'), true); });
   });
-  zetModus(load('modus', body.getAttribute('data-modus-start') || 'stap'), false);
+  var modusStart = body.getAttribute('data-modus-start') || 'kort';
+  zetModus(modusBtns.length ? load('modus', modusStart) : modusStart, false);
 
   /* ---------- 4. Vinkjes wissen ---------- */
   var reset = document.getElementById('btnReset');
