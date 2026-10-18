@@ -89,8 +89,8 @@ Repository `jonasdaltongent/Mail-NovaDepot`, Pages op `main`, map `/ (root)`; ad
 `classroom.json`: **Communicatie 1 — De zakelijke e-mail**, onderwerp *Digitale competenties*, 3ORLO, 4ORLOa en 4ORLOb,
 20 punten, deadline vrijdag 23 oktober 2026, 20.00 uur. Bijlagen: de link naar de lespagina en `CO1_De-zakelijke-e-mail`
 (**Een kopie maken voor elke leerling**). Geen zip. Als **concept** klaargezet op 18-10-2026 en teruggelezen (`DRAFT`, zonder tijdstip, deadline vr 23-10 20.00 uur, 20 punten, het
-werkdocument als `STUDENT_COPY`). **Nog niet ingepland**: dat doet de hoofdsessie na het nakijken, een half uur vóór elke les
-(3ORLO wo 21-10 om 8.45, 4ORLOb wo 21-10 om 9.55, 4ORLOa do 22-10 om 13.15).
+werkdocument als `STUDENT_COPY`). **Ingepland** door de hoofdsessie na het nakijken (18-10-2026, teruggelezen: `DRAFT` met een tijdstip): Classroom
+publiceert zelf een half uur vóór elke les: wo 21-10 om 8.45 (3ORLO) en 9.55 (4ORLOb), do 22-10 om 13.15 (4ORLOa).
 
 Instructietekst:
 
