@@ -242,7 +242,13 @@ het grootst. Grijze regel erboven: *Schrijf zoals Tom het zou versturen: u-vorm,
 **Extra** (telt niet mee, na het inleveren; in het werkdocument onder *Extra*): *Kim Wouters antwoordt: "Vrijdag 30
 oktober past, maar pas om 11 uur." Schrijf een kort antwoord van Tom: bedanken en bevestigen.* [vak]
 
-Verwachte antwoorden: `README.md` §4 (de lesbouwer schrijft ze uit § 22 en hieronder).
+**Verwachte antwoorden** (ook in `README.md` §4; hier staan ze voor de verbetertool, 19-10-2026): deel 1 en deel 3
+in § 22 (*Mogelijke fouten in de mail van Tom*, *Een goede mail*) · deel 2: 2 Inleiding **E** · 3 De vraag **F** ·
+4 Slot **D** · 5 Slotgroet **A** · 6 Handtekening **C** (1 Aanspreking **B** is ingevuld).
+
+**Wat niet telt** (voorstel AI, 19-10-2026): bij deel 1 het lege onderwerp nog eens (rij 1 is ingevuld), dezelfde fout
+twee keer, of een fout die niet in de mail van Tom staat · bij deel 3 de mail van Lotte (deel 2) overgeschreven: die
+gaat over iets anders.
 
 ## 15–17. Korte klassikale instructie en demonstratie (Ik doe → Jullie doen)
 
@@ -351,6 +357,29 @@ het werkdocument. Verbetersleutel: `README.md` §4.
 
 Punten per deel: 4 · 3 · 13. Deel 2: alle vijf juist = 3, drie of vier = 2, één of twee = 1.
 
+**Hoe de punten verdeeld worden** (voorstel AI, 19-10-2026; Jonas past aan bij het verbeteren):
+
+- **Deel 1** (4): 1 per fout met een betere versie; een fout zonder betere versie = ½.
+- **Deel 3, Aan en onderwerp** (2): 1 voor *Aan* (het adres letter voor letter juist; een tikfout = 0: de mail komt niet
+  aan) · 1 voor een onderwerp met de bestelling (het nummer of *bestelling*) én wat Tom vraagt (verplaatsen); één van
+  de twee = ½.
+- **Deel 3, aanspreking en slotgroet** (2): 1 voor *Beste mevrouw Wouters,* (ook *Geachte mevrouw Wouters,*; *Beste
+  Kim* of *Hallo* = 0) · 1 voor een slotgroet zonder afkorting.
+- **Deel 3, inleiding** (1): wie schrijft (Tom Peeters, NovaDepot) en waarover (de bestelling, de levering). Begint ze met
+  *ik*, of staat er de eigen naam in plaats van Tom: ½.
+- **Deel 3, de vraag** (4): 1 per onderdeel: het bestelnummer · de afgesproken datum · kort de reden (de koelcel) · de
+  nieuwe datum met de uren.
+- **Deel 3, slot** (2): 1 voor tegen wanneer (dinsdag 27 oktober) · 1 voor bedanken.
+- **Deel 3, overal *u* …** (1): 1 als alles klopt; *u* en *je* door elkaar, chattaal, hoofdletters om te roepen, *!!!*
+  of een emoji = 0.
+- **Deel 3, handtekening** (1): naam, functie, NovaDepot en toestel 214 = 1; drie van de vier = ½. De leerling schrijft
+  **voor Tom**: staat er de eigen naam in plaats van Tom Peeters (in de tekst voor de AI `[NAAM]`, `[VOORNAAM]` of
+  `[ACHTERNAAM]`), dan = 0.
+
+**De feiten uit het kader** die in de mail juist moeten staan: verkoop@demelkkan.example · mevrouw Wouters · bestelling
+2026-0418 · donderdag 29 oktober (7.30 uur) · de koelcel krijgt onderhoud · vrijdag 30 oktober, tussen 7 en 10 uur ·
+dinsdag 27 oktober. Een ander nummer, een andere datum of andere uren = 0 op dat onderdeel.
+
 **Mogelijke fouten in de mail van Tom** (deel 1, vier zijn genoeg): het lege onderwerp (ingevuld) · *hey* →
 *Beste mevrouw Wouters,* · begint met *ik*, kleine letters → *Mijn naam is Tom Peeters, magazijnverantwoordelijke bij
 NovaDepot.* · welke levering? geen bestelnummer of datum → *bestelling 2026-0418 van donderdag 29 oktober* · *later*
@@ -381,6 +410,10 @@ Magazijnverantwoordelijke · NovaDepot · toestel 214
 
 **Essentiële fouten:** geen bestelnummer of geen nieuwe datum · *Hey* of *Hallo*, of *u* en *je* door elkaar ·
 chattaal, hoofdletters om te roepen of emoji's · geen naam onder de mail.
+
+### Jonas' beslissingen bij het verbeteren
+
+- (nog geen)
 
 ## 23. Feedback
 
