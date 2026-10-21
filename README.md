@@ -65,9 +65,12 @@ regels onder de handeling en één tip per stap.
 - **Tekeningen in HTML en CSS** (geen schermafbeeldingen): de opdracht in Classroom, de mail van Tom (`.mail`), de tabellen van
   het werkdocument (`.teken-wd`), het kader met de feiten, het venster *Nieuw bericht* met lichtblauwe vakken (`.mailbouw.werk`,
   met het rode kader op het vak waar de leerling typt) en de mail met de zes bouwstenen (`.mailbouw`, ook op dia 6). In stap 4
-  staat onder de handelingen het skelet van de ingevulde mail: *Ziet het bij jou er zo uit?* Sinds 19-10-2026 zeggen de
-  handelingen van stap 4 zelf (zichtbaar in *Kort*): het adres uit het kader, het onderwerp van rij 1 mag, en *Je schrijft
-  voor Tom: onderaan staat de handtekening van Tom*.
+  staat onder de handelingen het skelet van de ingevulde mail: *Ziet het bij jou er zo uit?*
+- **Stap 4: de feiten bij elke bouwsteen** (Jonas, 21-10-2026, na de les in 3ORLO: "dat ze minder moeten zoeken. Het mag
+  bijna copy/paste worden, maar net niet"). Vijf handelingen (Aan en onderwerp · aanspreking en inleiding · de vraag · slot ·
+  slotgroet en handtekening) en *nalezen*; onder elke handeling een lichtblauw blok `.feiten`, zichtbaar in *Kort*, met per
+  bouwsteen de feiten uit het kader en een zinsbegin (*Beste mevrouw* + achternaam, *Mijn naam is …*, *Kunt u …?*,
+  *Met vriendelijke …*), maar geen volledige zinnen. Eerst voor 4ORLOb en 4ORLOa; 3ORLO had de les al.
 - **Stap 5: inleveren pas na de zelftest, met een codewoord** (zoals les 09). Eerst de zelftest van drie vragen (onderwerp,
   wat Kim Wouters moet weten, slotgroet); daarna het blok *Afwerken en inleveren* (codewoord, controletabel, het filmpje
   *Inleveren*) dat dicht blijft tot de drie vragen juist zijn. De groene regel toont dan het codewoord **ENVELOP**, dat de
