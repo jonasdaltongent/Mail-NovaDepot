@@ -736,3 +736,13 @@ body.js .slot { display: flex; align-items: center; gap: .6rem; margin: 0 0 1.2r
 /* Chrome tekent geen box-shadow op een tabelcel met samengevoegde randen: het rode kader in de tabeltekeningen
    (.teken-wd) is daarom een outline (ook in les 09 zichtbaar te maken; voorstel voor het sjabloon) */
 .teken-wd td.wijs { box-shadow: none; outline: 4px solid #C5221F; outline-offset: -3px; }
+
+/* ===== Feiten bij een handeling (21-10-2026) =====
+   Zichtbaar ook in Kort: bij elke bouwsteen de feiten die de leerling nodig heeft, zonder te zoeken. */
+.feiten { margin: .45rem 0 .1rem; padding: .5rem .8rem .55rem; background: var(--peri-soft); border-left: 4px solid var(--peri); border-radius: 6px; font-size: .95rem; }
+.feiten-kop { margin: .35rem 0 .15rem; font-size: .78rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--navy); }
+.feiten-kop:first-child { margin-top: 0; }
+.feiten dl { display: grid; grid-template-columns: max-content 1fr; gap: .15rem .8rem; margin: 0; }
+.feiten dt { font-weight: 700; color: var(--navy-deep); }
+.feiten dd { margin: 0; overflow-wrap: anywhere; }
+@media (max-width: 560px) { .feiten dl { grid-template-columns: 1fr; gap: 0; } .feiten dd { margin-bottom: .3rem; } }
