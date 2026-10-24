@@ -413,7 +413,11 @@ chattaal, hoofdletters om te roepen of emoji's · geen naam onder de mail.
 
 ### Jonas' beslissingen bij het verbeteren
 
-- (nog geen)
+- 24-10-2026 (de voorstellen van de AI, door Jonas gekozen):
+  - Het adres bij *Onderwerp* en *Aan* leeg: 0 voor Aan (de mail komt niet aan).
+  - *Beste mevrouw Kim Wouters,* (met de voornaam) telt als *Beste mevrouw Wouters,*.
+  - Het bestelnummer alleen in het onderwerp telt voor *de vraag* (onderdeel bestelnummer).
+  - Alleen *tegen dinsdag*, zonder 27 oktober, is ½ voor *tegen wanneer*.
 
 ## 23. Feedback
 
